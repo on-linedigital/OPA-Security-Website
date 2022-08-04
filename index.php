@@ -35,5 +35,29 @@
 </head>
 
 <body>
+<div class="loader">
+<div class="center">
+  <img class="loading-img" src="./assets/img/loading.png" alt="Loading..." width="200" height="124"/>
+</div></div>
+  <section class="nav-bar">
+  <div class="nav-container">
+  <img class="nav-logo" src="./assets/img/loading.png" alt="logo"/>
+  </div>
+</section>
+    <script>
+        const loader = document.querySelector(".loader");
+          window.onload = function(){
+            setTimeout(function(){
+              loader.style.opacity = "0";
+              setTimeout(function(){
+                loader.style.display = "none";
+              }
+                         , 500);
+            }
+                       ,1500);
+          }
+    </script>
 
 </body>
+
+</html>
